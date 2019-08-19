@@ -22,20 +22,20 @@
             <thead>
             <tr>
                 <th scope="col">Name</th>
+                <th scope="col">Avatar Url</th>
                 <th scope="col">Id</th>
                 <th scope="col">Login</th>
                 <th scope="col">Email</th>
-                <th scope="col">Avatar Url</th>
             </tr>
             </thead>
             <tbody>
             <c:forEach items = "${githubers}" var = "current">
             <tr>
-                    <td><c:out value = "${current.name}"/></td>
-                    <td><c:out value = "${current.id}"/></td>
-                    <td><c:out value = "${current.login}"/></td>
-                    <td><c:out value = "${current.email}"/></td>
-                    <td><c:out value = "${current.avatarUrl}"/></td>
+                <td>${current.name}</td>
+                <td><img src="${current.avatarUrl}" alt="${current.name}'s profile picture" height="70" width="70"></td>
+                <td>${current.id}</td>
+                <td>${current.login}</td>
+                <td>${current.email}</td>
             </tr>
             </c:forEach>
             </tbody>

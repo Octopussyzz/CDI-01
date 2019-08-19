@@ -8,6 +8,7 @@ import java.util.*;
 @Dependent
 public class DumbGithuberDAO implements GithuberDAO {
 
+    @Override
     public List<Githuber> getGithubers() {
 
         List<Githuber> list = new ArrayList<Githuber>();
@@ -26,4 +27,7 @@ public class DumbGithuberDAO implements GithuberDAO {
         return list;
     }
 
+    @Override
+    public void saveGithuber(Githuber githuber) throws UnsupportedOperationException {
+    }
 }

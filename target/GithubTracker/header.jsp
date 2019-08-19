@@ -34,6 +34,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="githubers">List of Githubers</a>
             </li>
+            <li>
+                <a class="nav-link" href="track">Add a Githuber</a>
+            </li>
         </ul>
     </div>
 </nav>
